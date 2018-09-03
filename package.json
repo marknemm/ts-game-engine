@@ -1,0 +1,31 @@
+{
+  "name": "ts-game-engine",
+  "version": "1.0.0",
+  "description": "Simple Typescript game engine",
+  "scripts": {
+    "build": "cd ./lib && npm run-script build && cd ../demo && npm run-script build",
+    "build:lib:watch": "cd ./lib && npm run-script build:watch",
+    "clean": "rimraf ./.nyc_output ./coverage ./demo/build ./lib/dist",
+    "lint": "cd ./lib && npm run-script lint && cd ../demo && npm run-script lint",
+    "postinstall": "cd ./lib && npm install && cd ../demo && npm install",
+    "start": "cd ./demo && npm run-script start",
+    "test": "cd ./lib && npm run-script test && cd ../demo && npm run-script test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marknemm/ts-game-engine.git"
+  },
+  "keywords": [
+    "Typescript",
+    "HTML5"
+  ],
+  "author": "Mark Nemmer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marknemm/ts-game-engine/issues"
+  },
+  "homepage": "https://github.com/marknemm/ts-game-engine#readme",
+  "devDependencies": {
+    "rimraf": "^2.6.2"
+  }
+}

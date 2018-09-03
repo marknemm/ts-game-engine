@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./demo",
+    "outDir": "build/dist",
+    "module": "esnext",
+    "jsx": "react",
+    "rootDirs": ["src", "../lib/src"],
+    "typeRoots": ["./node_modules/@types"],
+  },
+  "include": [
+    "./src/**/*",
+    "../lib/src/**/*"
+  ]
+}

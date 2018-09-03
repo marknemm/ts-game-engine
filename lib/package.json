@@ -1,0 +1,28 @@
+{
+  "name": "ts-game-engine-lib",
+  "description": "Simple Typescript game engine library",
+  "author": "Mark Nemmer",
+  "scripts": {
+    "build": "webpack --progress true",
+    "build:watch": "webpack --progress true --debug true --watch true",
+    "lint": "tslint --project ./",
+    "test": "npm run-script lint && nyc -e .ts -x \"*.spec.ts\" jasmine-ts \"spec/**/*.spec.ts\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jasmine": "^2.8.8",
+    "@types/node": "^10.9.4",
+    "awesome-typescript-loader": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "jasmine": "^3.2.0",
+    "jasmine-ts": "^0.2.1",
+    "nodemon": "^1.18.4",
+    "nyc": "^13.0.1",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}

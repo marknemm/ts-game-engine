@@ -1,0 +1,28 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "linterOptions": {
+    "exclude": [
+      "**/node_modules/**/*.ts",
+      "**/coverage/lcov-report/*.js",
+      "**/config/**/*.js"
+    ]
+  },
+  "jsRules": {},
+  "rules": {
+    "member-access": [true, "no-public"],
+    "member-ordering": [true, {"order": "fields-first"}],
+    "no-inferrable-types": [true, "ignore-params"],
+    "quotemark": [true, "single"],
+    "ordered-imports": false,
+    "array-type": [true, "array"],
+    "trailing-comma": false,
+    "no-empty": [true, "allow-empty-catch", "allow-empty-functions"],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "allow-leading-underscore"
+    ]
+  },
+  "rulesDirectory": []
+}

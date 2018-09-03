@@ -1,0 +1,6 @@
+{
+  "extends": ["../tslint.json", "tslint-react", "tslint-config-prettier"],
+  "rules": {
+    "jsx-boolean-value": false
+  }
+}
