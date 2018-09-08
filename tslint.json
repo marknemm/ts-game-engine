@@ -10,19 +10,22 @@
   },
   "jsRules": {},
   "rules": {
-    "member-access": [true, "no-public"],
+    "member-access": [true, "no-public", "check-parameter-property"],
     "member-ordering": [true, {"order": "fields-first"}],
+    "one-line": false,
     "no-inferrable-types": [true, "ignore-params"],
-    "quotemark": [true, "single"],
+    "quotemark": [true, "single", "jsx-double"],
     "ordered-imports": false,
     "array-type": [true, "array"],
     "trailing-comma": false,
     "no-empty": [true, "allow-empty-catch", "allow-empty-functions"],
+    "max-line-length": [true, 200],
     "variable-name": [
       true,
       "ban-keywords",
       "allow-leading-underscore"
-    ]
+    ],
+    "semicolon": [true, "awlays", "ignore-interfaces", "ignore-bound-class-methods"]
   },
   "rulesDirectory": []
 }

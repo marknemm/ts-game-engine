@@ -1,4 +1,4 @@
-import { GameScene } from '../../../../lib/src/index';
+import { GameScene } from '../../../lib/src/index';
 
 export class FlappyBirdScene extends GameScene {
 

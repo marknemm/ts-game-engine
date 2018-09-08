@@ -27,5 +27,8 @@
   "homepage": "https://github.com/marknemm/ts-game-engine#readme",
   "devDependencies": {
     "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3"
   }
 }

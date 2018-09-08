@@ -8,9 +8,12 @@
     "lint": "tslint --project ./",
     "test": "npm run-script lint && nyc -e .ts -x \"*.spec.ts\" jasmine-ts \"spec/**/*.spec.ts\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
   "devDependencies": {
     "@types/jasmine": "^2.8.8",
+    "@types/lodash": "^4.14.116",
     "@types/node": "^10.9.4",
     "awesome-typescript-loader": "^5.2.0",
     "css-loader": "^1.0.0",
